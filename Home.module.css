@@ -1,0 +1,87 @@
+@keyframes colorChange {
+  0% {
+    color: white; /* Starting color */
+  }
+  25% {
+    color: lightblue; /* Change to light blue */
+  }
+  50% {
+    color: lightgreen; /* Change to light green */
+  }
+  75% {
+    color: coral; /* Change to coral */
+  }
+  100% {
+    color: white; /* Return to starting color */
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  background-image: url('./imgs/200.gif'); /* path to your GIF */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background */
+  height: 100vh; /* Optional: set the height as needed */
+}
+
+.musicContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1250px;
+}
+
+.textContainer {
+  flex: 1;
+  white-space: normal;
+  overflow-wrap: break-word;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 2rem;
+  font-family: 'Georgia', 'Times New Roman', serif; /* Classy serif font */
+  animation: colorChange 5s infinite; /* Apply the color change animation */
+}
+
+.textContainerHeading {
+  flex: 1;
+  white-space: normal;
+  overflow-wrap: break-word;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  font-family: 'Georgia', 'Times New Roman', serif; /* Classy serif font */
+  animation: colorChange 5s infinite; /* Apply the color change animation */
+}
+
+.albumContainer img {
+  opacity: 0.75;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 1.4;
+  margin: 0;
+  font-family: 'Arial', 'Times New Roman', serif; /* Classy serif font */
+  animation: colorChange 5s infinite; /* Apply the color change animation */
+}
+
+h2 {
+  font-size: 5rem;
+  line-height: 1.4;
+  margin: 0;
+  font-family: 'Arial', 'Times New Roman', serif; /* Classy serif font */
+  animation: colorChange 5s infinite; /* Apply the color change animation */
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
